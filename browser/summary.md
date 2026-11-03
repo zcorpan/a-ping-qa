@@ -43,3 +43,15 @@ Pings received per click (tokens in the ping attribute → requests logged by th
 - Fx, send_pings: firefox 161.0a1
 - Fx, send_pings, max_per_link=-1: firefox 161.0a1
 - Fx, send_pings, max_per_link=-1, require_same_host: firefox 161.0a1
+
+Repeat runs of the large cases on an idle machine (`*-big-*`), and `slow*` cases where the server holds each ping 0.5 s so the rest queue in flight (`*-slow*`):
+
+| Run | n256 | n257 | n500 | n1000 | slow256 | slow257 | slow300 | slow500 |
+|---|---|---|---|---|---|---|---|---|
+| `chrome-big-1` | 256/256 | 257/257 | 500/500 | 1000/1000 |  |  |  |  |
+| `chrome-big-2` | 256/256 | 257/257 | 500/500 | 1000/1000 |  |  |  |  |
+| `chrome-slow` |  |  |  |  | 256/256 | 256/257 | 256/300 | 256/500 |
+| `ff-unlimited-big-1` | 256/256 | 257/257 | 500/500 | 1000/1000 |  |  |  |  |
+| `ff-unlimited-big-2` | 256/256 | 257/257 | 500/500 | 1000/1000 |  |  |  |  |
+| `ff-unlimited-slow-2` |  |  |  |  | 256/256 | 257/257 |  |  |
+| `ff-unlimited-slow` |  |  |  |  | 255/256 | 256/257 | 300/300 | 500/500 |

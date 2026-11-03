@@ -24,6 +24,8 @@ for web compat.
   and every script pattern found sets a single URL. The one script that can build a longer list
   is Awin's (`www.dwin2.com`): it appends its beacon URL to an existing `ping` value, and sends the
   same data with `navigator.sendBeacon` too.
+- Loading the 263 pages that use `ping` (or load a script that does) in Chrome Canary and
+  Firefox Nightly gives the same final DOM in both: 181 `<a ping>` on 15 pages, all 1 URL.
 - So a cap of 1 URL per link (Gecko's `max_per_link` default) covers every use seen; nothing in
   either corpus needs more. No page behavior depends on the pings being sent (they're
   fire-and-forget), so what's lost to a cap or to pings being off is the site's click tracking.
@@ -98,7 +100,7 @@ by script URL and pattern; `build_live_list.py`'s `script_kind()` decides which 
 | Script: other (one site each) | 15 (15) | 16 (16) |
 
 Elements in crawled HTML: 203, all with 1 token; 201 same host (Google Search, a Japanese
-directory site linking through its own click counter, one pasted Google link), 2 cross host
+ranking site pinging its own `/cc/` URLs, one pasted Google link), 2 cross host
 (Taboola).
 
 What the scripts do (read from crawled snippets and, for AdRecover and Awin, live copies of the
@@ -106,7 +108,8 @@ scripts):
 
 - AdPushup-derived ad beacon: picks `sendBeacon` when available; otherwise, on Chrome, Safari or
   Opera with `ping` supported, it fires each beacon as a synthetic click on a hidden
-  `javascript:` link with `ping` set to one URL.
+  `javascript:` link with `ping` set to one URL (read in AdRecover's live copy; Geniee's crawled
+  snippets have the same structure).
 - Taboola Newsroom: sets one cross-origin `nr-events.taboola.com` URL on its links.
 - Google Search: result links carry one same-origin `/url?…` ping; scripts copy or extend that
   one URL string.
@@ -123,7 +126,53 @@ scripts):
 link per case, click it with WebDriver (or `click()`/a synthetic `click` event), and count the
 requests that arrive. Results in `browser/results/`, table in `browser/summary.md`.
 
-LIVE_DOM_PLACEHOLDER
+Browsers: Chrome Canary 159.0.8140.0, Safari TP 255 (WebDriver reports 27.0), Firefox Nightly
+161.0a1. Firefox setups: defaults (pings off), `browser.send_pings`, plus
+`max_per_link=-1`, plus `require_same_host`.
+
+| Case | Chrome Canary | Safari TP | Fx, send_pings | Fx, send_pings, max_per_link=-1 |
+|---|---|---|---|---|
+| 1 to 257 same-origin tokens | all | all | 1 | all |
+| 500, 1000 tokens, fast local server | all in 3 runs; 356 and 351 in 1 | all | 1 | all |
+| 257 to 500 tokens, server holds each ping 0.5 s | 256 | not run | 1 | all |
+| cross-origin first, then same-origin | 2 | 2 | 1 (the first) | 2 |
+| same URL twice | 1 | 2 | 1 | 2 |
+| `data:`/`javascript:`/`ftp:`/invalid first, then http | 1 | 1 | 1 (the http one) | 1 |
+| tokens separated by LF, tab, FF (4) | 4 | 4 | 1 | 3 |
+| `<area>`, `click()` | all | all | 1 | all |
+| SVG `<a>` | all | 0 | 1 | all |
+| MathML `<a>` | 0 (2 with `MathMLAnchorElement`) | 2 | 1 | 2 |
+| hidden `javascript:` link, `ping` set before each of 3 synthetic clicks | 3 | 3 | 3 | 3 |
+
+With pings off (Firefox defaults) nothing is sent. `require_same_host` blocks pings to another
+port as well as another host (it's a same-origin check), and with `max_per_link=-1` the
+same-origin token after a blocked one is still sent. Chrome's 256 is the network service's
+in-flight keepalive cap per top-level frame (`kMaxKeepaliveConnectionsPerTopLevelFrame` in
+`services/network/url_loader_factory.cc`): requests past it fail with
+`ERR_INSUFFICIENT_RESOURCES`, so how many get through depends on how fast the ping server
+answers. The cap is shared with `fetch(…, {keepalive: true})` and `sendBeacon` from the same
+frame.
+
+## 3. Live pages
+
+`build_live_list.py` lists 263 pages (`data/live-pages.jsonl`): HTTP Archive pages with ping
+markup or a matching script, and Common Crawl pages with ping markup or the inline template.
+`live_dom.py` (Chrome Canary) and `live_dom_gecko.py` (Firefox Nightly, `send_pings` on,
+`max_per_link=-1`) load each page headless at 1366×900, wait 8 s, and record every element with
+a `ping` attribute in every frame (WebDriver switches into cross-origin frames too): tag,
+namespace, token count, ping hosts and whether each is same-origin. No clicks, and full URLs
+aren't kept (`out/live-*.jsonl`, summary in `data/live-summary.md`).
+
+- Both browsers: 263 pages loaded, 15 with `<a ping>` in some frame, 181 elements, all with
+  1 token; 99 same-origin, 82 cross-origin (80 to one Polish site's tracking host, 2 to
+  Taboola). No page differed between the browsers.
+- `'ping' in HTMLAnchorElement.prototype` was true on every page in both, including Firefox.
+- The ad-beacon libraries' hidden link wasn't in any final DOM, as expected: both browsers
+  have `sendBeacon`. Taboola's script was on 43 of the pages but its ping on only 2 live; I think
+  it sets `ping` on click.
+
+`live_dom.py` was fixed mid-run (it started a new driver per page); the output from before the
+fix was discarded, and both committed runs are from the fixed version.
 
 ## Not covered
 

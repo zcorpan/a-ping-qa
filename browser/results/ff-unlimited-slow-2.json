@@ -1,0 +1,119 @@
+{
+ "setup": "ff-unlimited",
+ "browser": "firefox",
+ "version": "161.0a1",
+ "cases": [
+  {
+   "case": "slow256",
+   "kind": "a",
+   "click": "native",
+   "tokens": 256,
+   "received": 256,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/slow256/0",
+    "localhost:18431/ping/slow256/1",
+    "localhost:18431/ping/slow256/2",
+    "localhost:18431/ping/slow256/4",
+    "localhost:18431/ping/slow256/3",
+    "localhost:18431/ping/slow256/5",
+    "localhost:18431/ping/slow256/6",
+    "localhost:18431/ping/slow256/7",
+    "localhost:18431/ping/slow256/8",
+    "localhost:18431/ping/slow256/9",
+    "localhost:18431/ping/slow256/10",
+    "localhost:18431/ping/slow256/11",
+    "localhost:18431/ping/slow256/12",
+    "localhost:18431/ping/slow256/13",
+    "localhost:18431/ping/slow256/14",
+    "localhost:18431/ping/slow256/15",
+    "localhost:18431/ping/slow256/16",
+    "localhost:18431/ping/slow256/17",
+    "localhost:18431/ping/slow256/18",
+    "localhost:18431/ping/slow256/19"
+   ],
+   "sample": [
+    {
+     "t": 1793713809.9716952,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/slow256/0",
+     "ping_to": "http://localhost:18431/landing?case=slow256",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793713809.971904,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/slow256/1",
+     "ping_to": "http://localhost:18431/landing?case=slow256",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "slow257",
+   "kind": "a",
+   "click": "native",
+   "tokens": 257,
+   "received": 257,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/slow257/0",
+    "localhost:18431/ping/slow257/1",
+    "localhost:18431/ping/slow257/2",
+    "localhost:18431/ping/slow257/3",
+    "localhost:18431/ping/slow257/4",
+    "localhost:18431/ping/slow257/5",
+    "localhost:18431/ping/slow257/6",
+    "localhost:18431/ping/slow257/7",
+    "localhost:18431/ping/slow257/8",
+    "localhost:18431/ping/slow257/9",
+    "localhost:18431/ping/slow257/10",
+    "localhost:18431/ping/slow257/11",
+    "localhost:18431/ping/slow257/12",
+    "localhost:18431/ping/slow257/13",
+    "localhost:18431/ping/slow257/14",
+    "localhost:18431/ping/slow257/15",
+    "localhost:18431/ping/slow257/16",
+    "localhost:18431/ping/slow257/17",
+    "localhost:18431/ping/slow257/18",
+    "localhost:18431/ping/slow257/19"
+   ],
+   "sample": [
+    {
+     "t": 1793713860.049115,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/slow257/0",
+     "ping_to": "http://localhost:18431/landing?case=slow257",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793713860.0508502,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/slow257/1",
+     "ping_to": "http://localhost:18431/landing?case=slow257",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  }
+ ]
+}
