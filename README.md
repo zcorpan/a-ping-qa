@@ -1,5 +1,7 @@
 # `<a ping>` web compat: how pages use it, and how many ping URLs browsers send
 
+For [bug 2088500](https://bugzilla.mozilla.org/show_bug.cgi?id=2088500) (`browser.send_pings.max_per_link`) and [bug 951104](https://bugzilla.mozilla.org/show_bug.cgi?id=951104) (enable `<a ping>`).
+
 Gecko implements hyperlink auditing behind `browser.send_pings` (off by default), with
 `browser.send_pings.max_per_link` (default 1) and `browser.send_pings.require_same_host`
 (default false). This measures what Firefox Nightly, Chrome Canary and Safari TP send per click,
@@ -10,7 +12,9 @@ for web compat.
 
 - Corpora: the 12 local Common Crawl CC-MAIN-2026-39 WARCs (seed 11397, all crawled URLs) and
   HTTP Archive's `sample_data.requests_10k` (2026-10-01, desktop and mobile). A 1% `TABLESAMPLE`
-  of `crawl.requests` was ruled out: it still bills the whole `response_body` column.
+  of `crawl.requests` wasn't used: its dry run reports the whole `response_body` column, and
+  `--maximum_bytes_billed` is checked against that estimate, even though a sampled query
+  bills less.
 - BigQuery budget: 0.5 TiB for the run.
 - Browsers: Firefox Nightly and Chrome Canary headless; Safari TP (no headless mode) only for the
   local test page.
@@ -47,9 +51,10 @@ for web compat.
 Other differences found on the test page (spec: [hyperlink auditing](https://html.spec.whatwg.org/multipage/links.html#hyperlink-auditing)):
 
 - Firefox splits on space, tab, LF and CR but not form feed (`nsWhitespaceTokenizer`), unlike
-  the spec's ASCII whitespace; Chrome and Safari split on form feed.
-- Firefox sends a `Referer` header with pings; the spec says referrer `no-referrer`, and Chrome
-  and Safari send none.
+  the spec's ASCII whitespace; Chrome and Safari split on form feed ([bug 2088508](https://bugzilla.mozilla.org/show_bug.cgi?id=2088508)).
+- Firefox sends a `Referer` header with cross-origin pings from `http:` pages; the spec says
+  referrer `no-referrer` (since whatwg/html#712), and Chrome and Safari send none
+  ([bug 2088505](https://bugzilla.mozilla.org/show_bug.cgi?id=2088505)).
 - Chrome collapses duplicate URLs into one ping (`SpaceSplitString` dedupes); Firefox and Safari
   send both.
 - Safari TP sends no pings for SVG `<a ping>` (WebKit's `SVGAElement` doesn't call
