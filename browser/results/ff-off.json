@@ -1,0 +1,337 @@
+{
+ "setup": "ff-off",
+ "browser": "firefox",
+ "version": "161.0a1",
+ "cases": [
+  {
+   "case": "n1",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n2",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n3",
+   "kind": "a",
+   "click": "native",
+   "tokens": 3,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n4",
+   "kind": "a",
+   "click": "native",
+   "tokens": 4,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n5",
+   "kind": "a",
+   "click": "native",
+   "tokens": 5,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n8",
+   "kind": "a",
+   "click": "native",
+   "tokens": 8,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n10",
+   "kind": "a",
+   "click": "native",
+   "tokens": 10,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n16",
+   "kind": "a",
+   "click": "native",
+   "tokens": 16,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n32",
+   "kind": "a",
+   "click": "native",
+   "tokens": 32,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n64",
+   "kind": "a",
+   "click": "native",
+   "tokens": 64,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n100",
+   "kind": "a",
+   "click": "native",
+   "tokens": 100,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n128",
+   "kind": "a",
+   "click": "native",
+   "tokens": 128,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n256",
+   "kind": "a",
+   "click": "native",
+   "tokens": 256,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n257",
+   "kind": "a",
+   "click": "native",
+   "tokens": 257,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n500",
+   "kind": "a",
+   "click": "native",
+   "tokens": 500,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "n1000",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1000,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "same_abs",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "xport",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "xhost",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "x_then_same",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "dup",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "data_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "js_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "ftp_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "invalid_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "ws_separators",
+   "kind": "a",
+   "click": "native",
+   "tokens": 4,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "area",
+   "kind": "area",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "svg_a",
+   "kind": "svg_a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "js_click",
+   "kind": "a",
+   "click": "js",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "blank_target",
+   "kind": "a_blank",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "mathml_a",
+   "kind": "mathml_a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "beacon_dispatch",
+   "kind": "beacon",
+   "click": "beacon_dispatch",
+   "tokens": 3,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "beacon_click",
+   "kind": "beacon",
+   "click": "beacon_click",
+   "tokens": 3,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  }
+ ]
+}

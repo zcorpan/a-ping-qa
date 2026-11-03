@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+out*/shots/
+out*/review-nsfw/
+*.log
+.publish-terms
+crawl/
+queries/*.out
+browser/results/*.txt

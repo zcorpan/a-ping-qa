@@ -1,0 +1,196 @@
+{
+ "setup": "safari-tp",
+ "browser": "Safari Technology Preview",
+ "version": "27.0",
+ "cases": [
+  {
+   "case": "xhost",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "127.0.0.1:18431/ping/xhost/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708005.592915,
+     "method": "POST",
+     "host": "127.0.0.1:18431",
+     "path": "/ping/xhost/0",
+     "ping_to": "http://localhost:18431/landing?case=xhost",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "dup",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 2,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/dup/0",
+    "localhost:18431/ping/dup/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708007.645972,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/dup/0",
+     "ping_to": "http://localhost:18431/landing?case=dup",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793708007.6474822,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/dup/0",
+     "ping_to": "http://localhost:18431/landing?case=dup",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "svg_a",
+   "kind": "svg_a",
+   "click": "native",
+   "tokens": 2,
+   "received": 0,
+   "error": null,
+   "paths": [],
+   "sample": []
+  },
+  {
+   "case": "mathml_a",
+   "kind": "mathml_a",
+   "click": "native",
+   "tokens": 2,
+   "received": 2,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/mathml_a/0",
+    "localhost:18431/ping/mathml_a/1"
+   ],
+   "sample": [
+    {
+     "t": 1793708011.8091571,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/mathml_a/0",
+     "ping_to": "http://localhost:18431/landing?case=mathml_a",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793708011.810617,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/mathml_a/1",
+     "ping_to": "http://localhost:18431/landing?case=mathml_a",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "beacon_dispatch",
+   "kind": "beacon",
+   "click": "beacon_dispatch",
+   "tokens": 3,
+   "received": 3,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/beacon_dispatch/0",
+    "localhost:18431/ping/beacon_dispatch/1",
+    "localhost:18431/ping/beacon_dispatch/2"
+   ],
+   "sample": [
+    {
+     "t": 1793708013.865331,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_dispatch/0",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793708013.866373,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_dispatch/1",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "beacon_click",
+   "kind": "beacon",
+   "click": "beacon_click",
+   "tokens": 3,
+   "received": 3,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/beacon_click/0",
+    "localhost:18431/ping/beacon_click/1",
+    "localhost:18431/ping/beacon_click/2"
+   ],
+   "sample": [
+    {
+     "t": 1793708015.9139142,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_click/0",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793708015.915267,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_click/1",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  }
+ ]
+}

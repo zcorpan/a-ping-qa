@@ -1,0 +1,860 @@
+{
+ "setup": "ff-default",
+ "browser": "firefox",
+ "version": "161.0a1",
+ "cases": [
+  {
+   "case": "n1",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n1/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708194.247058,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n1/0",
+     "ping_to": "http://localhost:18431/landing?case=n1",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n2",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n2/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708196.28383,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n2/0",
+     "ping_to": "http://localhost:18431/landing?case=n2",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n3",
+   "kind": "a",
+   "click": "native",
+   "tokens": 3,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n3/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708198.320833,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n3/0",
+     "ping_to": "http://localhost:18431/landing?case=n3",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n4",
+   "kind": "a",
+   "click": "native",
+   "tokens": 4,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n4/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708200.3499851,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n4/0",
+     "ping_to": "http://localhost:18431/landing?case=n4",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n5",
+   "kind": "a",
+   "click": "native",
+   "tokens": 5,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n5/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708202.3834891,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n5/0",
+     "ping_to": "http://localhost:18431/landing?case=n5",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n8",
+   "kind": "a",
+   "click": "native",
+   "tokens": 8,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n8/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708204.4205198,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n8/0",
+     "ping_to": "http://localhost:18431/landing?case=n8",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n10",
+   "kind": "a",
+   "click": "native",
+   "tokens": 10,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n10/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708206.4511218,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n10/0",
+     "ping_to": "http://localhost:18431/landing?case=n10",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n16",
+   "kind": "a",
+   "click": "native",
+   "tokens": 16,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n16/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708208.487239,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n16/0",
+     "ping_to": "http://localhost:18431/landing?case=n16",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n32",
+   "kind": "a",
+   "click": "native",
+   "tokens": 32,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n32/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708210.5193,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n32/0",
+     "ping_to": "http://localhost:18431/landing?case=n32",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n64",
+   "kind": "a",
+   "click": "native",
+   "tokens": 64,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n64/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708212.552917,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n64/0",
+     "ping_to": "http://localhost:18431/landing?case=n64",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n100",
+   "kind": "a",
+   "click": "native",
+   "tokens": 100,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n100/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708214.589761,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n100/0",
+     "ping_to": "http://localhost:18431/landing?case=n100",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n128",
+   "kind": "a",
+   "click": "native",
+   "tokens": 128,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n128/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708216.626063,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n128/0",
+     "ping_to": "http://localhost:18431/landing?case=n128",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n256",
+   "kind": "a",
+   "click": "native",
+   "tokens": 256,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n256/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708218.665378,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n256/0",
+     "ping_to": "http://localhost:18431/landing?case=n256",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n257",
+   "kind": "a",
+   "click": "native",
+   "tokens": 257,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n257/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708220.7046862,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n257/0",
+     "ping_to": "http://localhost:18431/landing?case=n257",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n500",
+   "kind": "a",
+   "click": "native",
+   "tokens": 500,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n500/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708222.7347982,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n500/0",
+     "ping_to": "http://localhost:18431/landing?case=n500",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "n1000",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1000,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/n1000/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708224.7679439,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/n1000/0",
+     "ping_to": "http://localhost:18431/landing?case=n1000",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "same_abs",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/same_abs/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708226.798205,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/same_abs/0",
+     "ping_to": "http://localhost:18431/landing?case=same_abs",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "xport",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18432/ping/xport/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708228.831819,
+     "method": "POST",
+     "host": "localhost:18432",
+     "path": "/ping/xport/0",
+     "ping_to": "http://localhost:18431/landing?case=xport",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": "http://localhost:18431/",
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "xhost",
+   "kind": "a",
+   "click": "native",
+   "tokens": 1,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "127.0.0.1:18431/ping/xhost/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708230.865119,
+     "method": "POST",
+     "host": "127.0.0.1:18431",
+     "path": "/ping/xhost/0",
+     "ping_to": "http://localhost:18431/landing?case=xhost",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": "http://localhost:18431/",
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "x_then_same",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "127.0.0.1:18431/ping/x_then_same/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708232.894763,
+     "method": "POST",
+     "host": "127.0.0.1:18431",
+     "path": "/ping/x_then_same/0",
+     "ping_to": "http://localhost:18431/landing?case=x_then_same",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": "http://localhost:18431/",
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "dup",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/dup/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708234.921365,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/dup/0",
+     "ping_to": "http://localhost:18431/landing?case=dup",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "data_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/data_first/1"
+   ],
+   "sample": [
+    {
+     "t": 1793708236.9528089,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/data_first/1",
+     "ping_to": "http://localhost:18431/landing?case=data_first",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "js_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/js_first/1"
+   ],
+   "sample": [
+    {
+     "t": 1793708238.983103,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/js_first/1",
+     "ping_to": "http://localhost:18431/landing?case=js_first",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "ftp_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/ftp_first/1"
+   ],
+   "sample": [
+    {
+     "t": 1793708241.0107641,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/ftp_first/1",
+     "ping_to": "http://localhost:18431/landing?case=ftp_first",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "invalid_first",
+   "kind": "a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/invalid_first/1"
+   ],
+   "sample": [
+    {
+     "t": 1793708243.044066,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/invalid_first/1",
+     "ping_to": "http://localhost:18431/landing?case=invalid_first",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "ws_separators",
+   "kind": "a",
+   "click": "native",
+   "tokens": 4,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/ws/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708245.0751412,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/ws/0",
+     "ping_to": "http://localhost:18431/landing?case=ws_separators",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "area",
+   "kind": "area",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/area/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708247.383774,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/area/0",
+     "ping_to": "http://localhost:18431/landing?case=area",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "svg_a",
+   "kind": "svg_a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/svg_a/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708249.9145112,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/svg_a/0",
+     "ping_to": "http://localhost:18431/landing?case=svg_a",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "js_click",
+   "kind": "a",
+   "click": "js",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/js_click/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708251.9426281,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/js_click/0",
+     "ping_to": "http://localhost:18431/landing?case=js_click",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "blank_target",
+   "kind": "a_blank",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/blank/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708254.4816241,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/blank/0",
+     "ping_to": "http://localhost:18431/landing?case=blank_target",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "mathml_a",
+   "kind": "mathml_a",
+   "click": "native",
+   "tokens": 2,
+   "received": 1,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/mathml_a/0"
+   ],
+   "sample": [
+    {
+     "t": 1793708256.5212438,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/mathml_a/0",
+     "ping_to": "http://localhost:18431/landing?case=mathml_a",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "beacon_dispatch",
+   "kind": "beacon",
+   "click": "beacon_dispatch",
+   "tokens": 3,
+   "received": 3,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/beacon_dispatch/2",
+    "localhost:18431/ping/beacon_dispatch/2",
+    "localhost:18431/ping/beacon_dispatch/2"
+   ],
+   "sample": [
+    {
+     "t": 1793708258.556981,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_dispatch/2",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793708258.557306,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_dispatch/2",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  },
+  {
+   "case": "beacon_click",
+   "kind": "beacon",
+   "click": "beacon_click",
+   "tokens": 3,
+   "received": 3,
+   "error": null,
+   "paths": [
+    "localhost:18431/ping/beacon_click/2",
+    "localhost:18431/ping/beacon_click/2",
+    "localhost:18431/ping/beacon_click/2"
+   ],
+   "sample": [
+    {
+     "t": 1793708260.588277,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_click/2",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    },
+    {
+     "t": 1793708260.588703,
+     "method": "POST",
+     "host": "localhost:18431",
+     "path": "/ping/beacon_click/2",
+     "ping_to": "javascript:void(0)",
+     "ping_from": "http://localhost:18431/test.html",
+     "origin": "http://localhost:18431",
+     "referer": null,
+     "ctype": "text/ping",
+     "body": "PING"
+    }
+   ]
+  }
+ ]
+}
