@@ -8,7 +8,7 @@ Gecko implements hyperlink auditing behind `browser.send_pings` (off by default)
 and how pages use `ping` in markup and scripts, to see how many ping URLs per link are needed
 for web compat.
 
-## Scope (agreed at kickoff, 2026-11-03)
+## Scope
 
 - Corpora: the 12 local Common Crawl CC-MAIN-2026-39 WARCs (seed 11397, all crawled URLs) and
   HTTP Archive's `sample_data.requests_10k` (2026-10-01, desktop and mobile). A 1% `TABLESAMPLE`
